@@ -5,13 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>ES6学习笔记（2） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="函数拓展函参数可以给默认值了，还可以写成多参数的形式 1234function more(...n)&amp;#123;        console.log(n.length);    &amp;#125;    more(&#39;z&#39;,&#39;y&#39;,&#39;ss&#39;);&#x2F;&#x2F;3 箭头函数的写法：()里写参数,然后箭头大括号，假如只有一个参数，小括号可以省略~若函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6学习笔记（2）">
+<meta property="og:url" content="http://yoursite.com/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="函数拓展函参数可以给默认值了，还可以写成多参数的形式 1234function more(...n)&amp;#123;        console.log(n.length);    &amp;#125;    more(&#39;z&#39;,&#39;y&#39;,&#39;ss&#39;);&#x2F;&#x2F;3 箭头函数的写法：()里写参数,然后箭头大括号，假如只有一个参数，小括号可以省略~若函数">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-29T11:39:11.977Z">
+<meta property="article:modified_time" content="2020-03-29T11:38:51.346Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-ES6学习笔记（2）" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ES6学习笔记（2）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/" class="article-date">
   <time datetime="2020-03-29T11:39:11.977Z" itemprop="datePublished">2020-03-29</time>
@@ -77,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/">ES6学习笔记（2）</a>
+    <h1 class="article-title" itemprop="name">
+      ES6学习笔记（2）
     </h1>
   
 
@@ -118,107 +120,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-ES6学习笔记（1）" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/" class="article-date">
-  <time datetime="2020-03-28T14:54:20.310Z" itemprop="datePublished">2020-03-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/">ES6学习笔记（1）</a>
-    </h1>
+    <a href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ES6学习笔记（1）</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ES6学习笔记（1）"><a href="#ES6学习笔记（1）" class="headerlink" title="ES6学习笔记（1）"></a>ES6学习笔记（1）</h1><p>有点杂，重在理解<del>~</del>多看书········</p>
-<h2 id="let"><a href="#let" class="headerlink" title="let"></a>let</h2><p>//JS变量的作用域范围</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span>(<span class="params">args</span>) </span>&#123;</span><br><span class="line">  	 <span class="keyword">var</span> args=<span class="string">"888"</span>;  <span class="comment">//永远都是888  不要这样定义</span></span><br><span class="line">   <span class="built_in">console</span>.log(args);</span><br><span class="line">&#125;</span><br><span class="line">show(<span class="string">"99"</span>);</span><br></pre></td></tr></table></figure>
-<p>虽然“99”是作为实参传递给形参，但是里面定义的args“888”会覆盖“99”，不出错又没提示就很麻烦。如果改为用let去声明，编译器就会给出错误提示，诶，你这args不能在这里出现哦！</p>
-<p>//如果要直接改l成let</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">show</span><span class="params">(args)</span> </span>&#123;</span><br><span class="line">       &#123; <span class="comment">//嵌套定义域 </span></span><br><span class="line">       let args=<span class="string">"888"</span>;  <span class="comment">//</span></span><br><span class="line">       console.log(args);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   show(<span class="string">"999999"</span>);</span><br><span class="line">   <span class="keyword">const</span> x=<span class="number">2</span>;  <span class="comment">//const也是ES6新增的，只读，指向的内存地址不变</span></span><br><span class="line">   show(x);</span><br></pre></td></tr></table></figure>
-<p>相关的概念：提升变量、暂时性死区、块级作用域（多多理解~）</p>
-<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">let str=<span class="string">"liuliuliuliu.ukulele.com"</span>;</span><br><span class="line"> let n1=str.indexOf(<span class="string">"www"</span>);</span><br><span class="line"> let n=str.includes(<span class="string">"www"</span>);</span><br><span class="line"> <span class="keyword">if</span>(n1==<span class="keyword">true</span>)&#123;</span><br><span class="line">     <span class="comment">//判断条件的书写比较麻烦！</span></span><br><span class="line"> &#125;</span><br><span class="line"> let n2=str.startsWith(<span class="string">"liu"</span>);</span><br><span class="line"> console.log(n2);  <span class="comment">//ture</span></span><br><span class="line"> let n3=str.startsWith(<span class="string">"ukulele"</span>,<span class="number">13</span>);<span class="comment">//从指定位置开始找</span></span><br><span class="line"> let n4=str.endsWith(<span class="string">"u."</span>,<span class="number">13</span>);  <span class="comment">//判断前13个字符组成的新字符串是否为u.结尾，并不是以0开头去数；</span></span><br><span class="line"> console.log(n3);  <span class="comment">//true</span></span><br><span class="line"> console.log(n4);  <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<p>在indexOf的基础上新增加了includes/startsWith和endsWith,返回的结果可以直接拿来判断~</p>
-<h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let username=<span class="string">"QQUkulele"</span>;</span><br><span class="line">    let age=<span class="number">18</span>;</span><br><span class="line">    let logo=<span class="string">"aaa.jpg"</span>;</span><br><span class="line">   <span class="comment">// let message="name:"+username+",age:"+age+",logo:"+logo;  //如果信息多了，就很麻烦</span></span><br><span class="line">    console.log(message);  </span><br><span class="line">    let message2=`username=$&#123;username&#125;,age=$&#123;age&#125;,loge=$&#123;logo&#125;`;</span><br><span class="line">    console.log(message2);</span><br></pre></td></tr></table></figure>
-<p>${}是一个占位符,在这里把变量套进来；``(反单引号)用以标识<br>用在函数上可以这样<br>   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function">function <span class="title">show</span><span class="params">(a,b,c,d)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a[<span class="number">0</span>]+b+a[<span class="number">1</span>]+c+a[<span class="number">2</span>]+d;</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(show`name=$&#123;username&#125;,age=$&#123;age&#125;,logo=$&#123;logo&#125;`) ;  </span><br><span class="line">    let out=show`name=$&#123;username&#125;,age=$&#123;age&#125;,logo=$&#123;logo&#125;`;</span><br><span class="line">    console.log(out);</span><br><span class="line">    <span class="function">function <span class="title">showagain</span><span class="params">(name,age,logo)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> show`name=$&#123;username&#125;,age=$&#123;age&#125;,logo=$&#123;logo&#125;`;</span><br><span class="line">&#125;</span><br><span class="line">    console.log(showagain(<span class="string">"QQ"</span>,<span class="string">"18"</span>,<span class="string">"Ukulele.jpg"</span>));  <span class="comment">//name=QQUkulele,age=18,logo=Ukulele.jpg</span></span><br></pre></td></tr></table></figure><br>认真观察~show（a,b,c,d）里的a是一个字符串数组<br>需要多加练习才能熟悉各种书写呢！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/" data-id="ck8bqkl0e0000jcwgctvsckjw" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/17/hello-world/" class="article-date">
-  <time datetime="2020-03-17T13:09:49.932Z" itemprop="datePublished">2020-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/17/hello-world/" data-id="ck7vzb6z00000ccwg9hpr1sva" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
