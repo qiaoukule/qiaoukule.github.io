@@ -1,309 +1,915 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
 
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="QQiukulele">
 <meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Hexo</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-ES6学习笔记（2）" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/" class="article-date">
-  <time datetime="2020-03-29T11:39:11.977Z" itemprop="datePublished">2020-03-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/">ES6学习笔记（2）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="函数拓展"><a href="#函数拓展" class="headerlink" title="函数拓展"></a>函数拓展</h2><p>函参数可以给<strong>默认值</strong>了，还可以写成<strong>多参数</strong>的形式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function more(...n)&#123;</span><br><span class="line">        console.log(n.length);</span><br><span class="line">    &#125;</span><br><span class="line">    more(&#39;z&#39;,&#39;y&#39;,&#39;ss&#39;);&#x2F;&#x2F;3</span><br></pre></td></tr></table></figure>
-<p><strong>箭头函数</strong>的写法：()里写参数,然后箭头大括号，假如只有一个参数，小括号可以省略~若函数体只有一句话，{}都可以省略了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let fun2&#x3D;(x,y)&#x3D;&gt; x+y;</span><br><span class="line">    console.log(fun2(2,3)); &#x2F;&#x2F;5</span><br></pre></td></tr></table></figure>
-<p><strong>函数尾调用</strong>，解决函数调用之间的问题，尾呢，在函数的最后一步调用函数，像递归、函数的嵌套~它解决函数各自产生内存区域（栈帧）还是共用一块内存区域。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let fun3&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">       return fun2(5,2);&#x2F;&#x2F;最后一步，但如果让其参与运算了如fun2（2,5）+1，也不算尾调用</span><br><span class="line">   &#125;;</span><br></pre></td></tr></table></figure>
-<p>传统的递归写法，很可能会有内存溢出的问题~用ES6可以解决</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let factorial2=(n,p=<span class="number">1</span>)=&gt;&#123;</span><br><span class="line">        <span class="keyword">if</span>(n&lt;=<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>*p;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            let result=n*p;</span><br><span class="line">            <span class="keyword">return</span> factorial2(n-<span class="number">1</span>,result);  <span class="comment">//这样就是共用一个内存空间了</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    console.log(factorial2(<span class="number">4</span>));</span><br></pre></td></tr></table></figure>
-<p>这样就避免多次调用函数产生很多的新的内存空间了。</p>
-<h2 id="循环拓展"><a href="#循环拓展" class="headerlink" title="循环拓展"></a>循环拓展</h2><p>写代码来感受一下for..of..和for..in的区别</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr=[<span class="number">33</span>,<span class="number">66</span>,<span class="number">99</span>,<span class="number">88</span>];</span><br><span class="line"> <span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> arr)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(key);<span class="comment">//把下标显示出来啦~</span></span><br><span class="line">        <span class="built_in">console</span>.log(arr[key]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">const</span> n <span class="keyword">of</span> arr)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(n);  <span class="comment">//把数组内容显示出来了</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>in后面写明要执行的数组对象，key只是个变量名，取什么都可以<br>函数的参数用的拓展运算符，结合着这些方法来遍历，就不用考虑我传得参数数目啦~<br>还有一个forEach，相当于把两者的功能结合起来了</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">arr.forEach(<span class="function">(<span class="params">x,y</span>)=&gt;</span>&#123;</span><br><span class="line">           <span class="built_in">console</span>.log(x);<span class="comment">//输出数组内容</span></span><br><span class="line">         <span class="built_in">console</span>.log(y);<span class="comment">//输出位置</span></span><br><span class="line">       &#125;);</span><br></pre></td></tr></table></figure>
-<p>filter  将符合条件的保留（过滤）下来</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num2= num.filter(<span class="function">(<span class="params">x</span>)=&gt;</span>x==<span class="number">2</span>);</span><br><span class="line">     <span class="built_in">console</span>.log(num2);</span><br></pre></td></tr></table></figure>
-<h2 id="set和map数据结构"><a href="#set和map数据结构" class="headerlink" title="set和map数据结构"></a>set和map数据结构</h2><p><strong>set</strong>,可以对数组进行严格地整理，比如说不允许有重复的项，也可以很容易地为几个数组取交集、并集等。同时也拥有很多方法，add()/delete()……</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array=[<span class="number">6</span>,<span class="number">7</span>,<span class="number">5</span>,<span class="number">0</span>,<span class="number">6</span>,<span class="number">1</span>];</span><br><span class="line">   <span class="keyword">let</span> array2=[<span class="number">6</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">9</span>];</span><br><span class="line">   <span class="keyword">let</span> set1=<span class="keyword">new</span> <span class="built_in">Set</span>(array);  <span class="comment">//相当于创建了个Set的数据对象,S大写啊！！</span></span><br><span class="line">   <span class="keyword">let</span> set2=<span class="keyword">new</span> <span class="built_in">Set</span>(array2);</span><br><span class="line">   <span class="built_in">console</span>.log(set1);<span class="comment">//后面的6不见啦</span></span><br><span class="line">   <span class="keyword">let</span> set3=<span class="keyword">new</span> <span class="built_in">Set</span>([...set1,...set2]);  <span class="comment">//合并两个set并去重</span></span><br><span class="line">   <span class="keyword">let</span> set4=<span class="keyword">new</span> <span class="built_in">Set</span>([...set1].filter(<span class="function">(<span class="params">x</span>)=&gt;</span>set2.has(x)));  <span class="comment">//算出两个数组的并集</span></span><br><span class="line">   <span class="keyword">let</span> set5=<span class="keyword">new</span> <span class="built_in">Set</span>([...set1].filter(<span class="function">(<span class="params">x</span>)=&gt;</span>!set2.has(x)));  <span class="comment">//差集</span></span><br></pre></td></tr></table></figure>
-<p><strong>Map</strong>它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。对象的键值只能是字符串类型。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num=<span class="number">123</span>;</span><br><span class="line">    <span class="keyword">let</span> a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">let</span> f = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line">    <span class="keyword">let</span> obj=&#123;&#125;;</span><br><span class="line">    <span class="keyword">const</span> map1=<span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line">    map1.set(num,<span class="string">"qi"</span>);</span><br><span class="line">    map1.set(a,<span class="string">"q9"</span>);</span><br><span class="line">    map1.set(f,<span class="string">"98"</span>);</span><br><span class="line">    map1.set(obj,<span class="string">"q5"</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">const</span> i <span class="keyword">of</span> map1.keys())&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">typeof</span> i);  <span class="comment">//也就是说key可以是不同类型的了，</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>Map 结构原生提供三个遍历器生成函数和一个遍历方法。</p>
-<p>Map.prototype.<strong>keys()</strong>：返回键名的遍历器。<br>Map.prototype.<strong>values()</strong>：返回键值的遍历器。<br>Map.prototype.<strong>entries()</strong>：返回所有成员的遍历器。<br>Map.prototype.<strong>forEach()</strong>：遍历 Map 的所有成员。</p>
-<p>多看看ES6入门教程，了解熟悉WeakMap 和 WeakSet，去看去看！！</p>
-
+        <p class="site-subtitle"></p>
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/" data-id="ck8cz7r1m00000swg0ft81hk3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ES6学习笔记（1）" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/" class="article-date">
-  <time datetime="2020-03-28T14:54:20.310Z" itemprop="datePublished">2020-03-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/">ES6学习笔记（1）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ES6学习笔记（1）"><a href="#ES6学习笔记（1）" class="headerlink" title="ES6学习笔记（1）"></a>ES6学习笔记（1）</h1><p>有点杂，重在理解<del>~</del>多看书········</p>
-<h2 id="let"><a href="#let" class="headerlink" title="let"></a>let</h2><p>//JS变量的作用域范围</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span>(<span class="params">args</span>) </span>&#123;</span><br><span class="line">  	 <span class="keyword">var</span> args=<span class="string">"888"</span>;  <span class="comment">//永远都是888  不要这样定义</span></span><br><span class="line">   <span class="built_in">console</span>.log(args);</span><br><span class="line">&#125;</span><br><span class="line">show(<span class="string">"99"</span>);</span><br></pre></td></tr></table></figure>
-<p>虽然“99”是作为实参传递给形参，但是里面定义的args“888”会覆盖“99”，不出错又没提示就很麻烦。如果改为用let去声明，编译器就会给出错误提示，诶，你这args不能在这里出现哦！</p>
-<p>//如果要直接改l成let</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">show</span><span class="params">(args)</span> </span>&#123;</span><br><span class="line">       &#123; <span class="comment">//嵌套定义域 </span></span><br><span class="line">       let args=<span class="string">"888"</span>;  <span class="comment">//</span></span><br><span class="line">       console.log(args);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   show(<span class="string">"999999"</span>);</span><br><span class="line">   <span class="keyword">const</span> x=<span class="number">2</span>;  <span class="comment">//const也是ES6新增的，只读，指向的内存地址不变</span></span><br><span class="line">   show(x);</span><br></pre></td></tr></table></figure>
-<p>相关的概念：提升变量、暂时性死区、块级作用域（多多理解~）</p>
-<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">let str=<span class="string">"liuliuliuliu.ukulele.com"</span>;</span><br><span class="line"> let n1=str.indexOf(<span class="string">"www"</span>);</span><br><span class="line"> let n=str.includes(<span class="string">"www"</span>);</span><br><span class="line"> <span class="keyword">if</span>(n1==<span class="keyword">true</span>)&#123;</span><br><span class="line">     <span class="comment">//判断条件的书写比较麻烦！</span></span><br><span class="line"> &#125;</span><br><span class="line"> let n2=str.startsWith(<span class="string">"liu"</span>);</span><br><span class="line"> console.log(n2);  <span class="comment">//ture</span></span><br><span class="line"> let n3=str.startsWith(<span class="string">"ukulele"</span>,<span class="number">13</span>);<span class="comment">//从指定位置开始找</span></span><br><span class="line"> let n4=str.endsWith(<span class="string">"u."</span>,<span class="number">13</span>);  <span class="comment">//判断前13个字符组成的新字符串是否为u.结尾，并不是以0开头去数；</span></span><br><span class="line"> console.log(n3);  <span class="comment">//true</span></span><br><span class="line"> console.log(n4);  <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<p>在indexOf的基础上新增加了includes/startsWith和endsWith,返回的结果可以直接拿来判断~</p>
-<h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let username=<span class="string">"QQUkulele"</span>;</span><br><span class="line">    let age=<span class="number">18</span>;</span><br><span class="line">    let logo=<span class="string">"aaa.jpg"</span>;</span><br><span class="line">   <span class="comment">// let message="name:"+username+",age:"+age+",logo:"+logo;  //如果信息多了，就很麻烦</span></span><br><span class="line">    console.log(message);  </span><br><span class="line">    let message2=`username=$&#123;username&#125;,age=$&#123;age&#125;,loge=$&#123;logo&#125;`;</span><br><span class="line">    console.log(message2);</span><br></pre></td></tr></table></figure>
-<p>${}是一个占位符,在这里把变量套进来；``(反单引号)用以标识<br>用在函数上可以这样<br>   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function">function <span class="title">show</span><span class="params">(a,b,c,d)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a[<span class="number">0</span>]+b+a[<span class="number">1</span>]+c+a[<span class="number">2</span>]+d;</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(show`name=$&#123;username&#125;,age=$&#123;age&#125;,logo=$&#123;logo&#125;`) ;  </span><br><span class="line">    let out=show`name=$&#123;username&#125;,age=$&#123;age&#125;,logo=$&#123;logo&#125;`;</span><br><span class="line">    console.log(out);</span><br><span class="line">    <span class="function">function <span class="title">showagain</span><span class="params">(name,age,logo)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> show`name=$&#123;username&#125;,age=$&#123;age&#125;,logo=$&#123;logo&#125;`;</span><br><span class="line">&#125;</span><br><span class="line">    console.log(showagain(<span class="string">"QQ"</span>,<span class="string">"18"</span>,<span class="string">"Ukulele.jpg"</span>));  <span class="comment">//name=QQUkulele,age=18,logo=Ukulele.jpg</span></span><br></pre></td></tr></table></figure><br>认真观察~show（a,b,c,d）里的a是一个字符串数组<br>需要多加练习才能熟悉各种书写呢！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/" data-id="ck8bqkl0e0000jcwgctvsckjw" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/17/hello-world/" class="article-date">
-  <time datetime="2020-03-17T13:09:49.932Z" itemprop="datePublished">2020-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/17/hello-world/" data-id="ck7vzb6z00000ccwg9hpr1sva" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
-    </div>
   </div>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+    <ul id="menu" class="menu">
+      
         
-          <li>
-            <a href="/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/">ES6学习笔记（2）</a>
-          </li>
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
         
-          <li>
-            <a href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/">ES6学习笔记（1）</a>
-          </li>
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
         
-          <li>
-            <a href="/2020/03/17/hello-world/">Hello World</a>
-          </li>
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
         
-      </ul>
-    </div>
-  </div>
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
 
+      
+    </ul>
   
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="QQiukulele">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/penguin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/" itemprop="url">ES6学习笔记（2）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-29T19:39:11+08:00">
+                2020-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+      
+
+      
+        
+          
+          函数拓展函参数可以给默认值了，还可以写成多参数的形式
+1234function more(...n)&#123;        console.log(n.length);    &#125;    more(&#39;z&#39;,&#39;y&#39;,&#39;ss&#39;);&#x2F;&#x2F;3
+箭头函数的写法：()里写参数,然后箭头大括号，假如只有一个参数，小括号可以省略~若函数体只有一句
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/29/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
 
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
   
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="QQiukulele">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/penguin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/" itemprop="url">ES6学习笔记（1）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-28T22:54:20+08:00">
+                2020-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          ES6学习笔记（1）
+tags: [前端]       #添加的标签categories: 前端                                #添加的分类
+
+有点杂，重在理解~多看书········
+let//JS变量的作用域范围
+12345function show(args) &#123;  	 var args="888";  //永远都是888  不要这样定义   console.
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/28/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/17/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="QQiukulele">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/penguin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/17/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-17T21:09:49+08:00">
+                2020-03-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Star
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/17/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/penguin.jpg"
+                alt="QQiukulele" />
+            
+              <p class="site-author-name" itemprop="name">QQiukulele</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QQiukulele</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
 
-<script src="/js/script.js"></script>
+        
 
 
 
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
